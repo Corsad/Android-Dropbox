@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/lightBlue">
+
+    <ImageView
+        android:id="@+id/dropboxIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dropbox_icon"
+        android:layout_weight="3"
+        android:paddingTop="80dp"
+    />
+
+    <RelativeLayout  android:id="@+id/loginPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="4"
+        >
+
+        <Button
+            android:id="@+id/folderBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/folderBtnTxt"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:background="@drawable/my_button"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:background="@drawable/my_button"
+            android:text="@string/linkingBtnTxt"
+            android:layout_below="@+id/folderBtn"
+            android:layout_centerHorizontal="true"
+
+            />
+    </RelativeLayout >
+</LinearLayout >

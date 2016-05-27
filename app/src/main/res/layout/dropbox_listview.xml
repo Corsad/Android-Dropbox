@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/list_header"
+        >
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/list_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="@string/header_intruction"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/blue"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/list_selection_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:paddingTop="5dp">
+
+        <ImageButton
+            android:id="@+id/listview_add_accept_file_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:src="@drawable/add_icon"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            />
+
+            <ImageButton
+                android:id="@+id/listview_option_deny_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:src="@drawable/tripple_dot_icon"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/item_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/list_selection_panel"
+        android:layout_below="@id/list_header"
+        />
+
+</RelativeLayout>
